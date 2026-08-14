@@ -20,8 +20,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 
-<title>Fucape Jr. Consultoria Empresarial</title>
-<meta name="description" content="Fucape Jr. Consultoria Empresarial: empresa Junior da Fucape Business School em Vitória, Espírito Santo (ES). Valuation, finanças, processos, viabilidade e custos para empresas capixabas.">
+<title>Fucape Jr. Consultoria</title>
+<meta name="description" content="Consultoria empresarial, pública e estratégica. Empresa Júnior da Fucape Business School em Vitória, Espírito Santo (ES): valuation, finanças, processos, viabilidade e custos.">
 <meta name="keywords" content="Fucape Jr, Fucape Junior, Fucape Júnior, Fucape Jr Consultoria, Fucape Junior Consultoria Empresarial, consultoria empresarial, consultoria empresarial Vitória, consultoria empresarial ES, consultoria júnior, empresa Junior Fucape, empresa júnior Vitória, empresa júnior Espírito Santo, consultoria Vitória, consultoria Vitoria ES, consultoria Espírito Santo, consultoria ES, consultoria Grande Vitória, valuation Vitória, estruturação financeira, mapeamento de processos, estudo de viabilidade, análise de custos">
 <meta name="author" content="Fucape Empresa Júnior de Consultoria">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
@@ -34,15 +34,15 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Fucape Jr.">
-<meta property="og:title" content="Fucape Jr. Consultoria Empresarial">
-<meta property="og:description" content="Consultoria empresarial da Fucape Business School em Vitória, Espírito Santo. Soluções em valuation, finanças, processos, viabilidade e custos.">
+<meta property="og:title" content="Fucape Jr. Consultoria">
+<meta property="og:description" content="Consultoria empresarial, pública e estratégica. Empresa Júnior da Fucape Business School em Vitória, Espírito Santo.">
 <meta property="og:url" content="https://fucapejr.com.br/">
 <meta property="og:image" content="https://fucapejr.com.br/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Fucape Jr. Consultoria Empresarial">
-<meta name="twitter:description" content="Empresa Junior de consultoria da Fucape Business School em Vitória, Espírito Santo (ES).">
+<meta name="twitter:title" content="Fucape Jr. Consultoria">
+<meta name="twitter:description" content="Consultoria empresarial, pública e estratégica. Empresa Júnior da Fucape Business School em Vitória, Espírito Santo (ES).">
 <meta name="twitter:image" content="https://fucapejr.com.br/og-image.png">
 
 <meta name="theme-color" content="#FCFAF8">
@@ -259,8 +259,13 @@ p{margin:0 0 1.1em}
 .frase em{font-style:italic;color:var(--vinho)}
 
 /* ══════════ SEÇÕES ══════════ */
-.sec{padding:clamp(70px,9vw,124px) 0;position:relative}
-.sec--baixo{content-visibility:auto;contain-intrinsic-size:auto 900px}
+/* scroll-margin-top desconta o cabeçalho fixo, que senão cobre o topo da
+   seção quando se chega nela por um link de âncora. */
+.sec{padding:clamp(70px,9vw,124px) 0;position:relative;scroll-margin-top:32px}
+/* .sec--baixo tinha content-visibility:auto com contain-intrinsic-size de
+   900px. Seções fora da tela não eram diagramadas e entravam na conta do
+   scroll com essa altura estimada em vez da real, então o navegador calculava
+   errado o destino dos links de âncora e parava longe da seção pedida. */
 .sec__cab{max-width:66ch;margin-bottom:clamp(2.6rem,4.5vw,3.8rem)}
 
 /* ══════════ DIAGNÓSTICO ══════════ */
