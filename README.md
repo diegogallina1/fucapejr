@@ -1,0 +1,1 @@
+# FUCAPE Jr\n\n**Entrepreneurship and research projects from FUCAPE Business School.**\n\n**Status:** Archived — coursework and extracurricular work.\n\n## Contents\n\nStudent-led initiatives in:\n- Financial analysis\n- Business planning\n- Market research\n- Case studies\n\n---\n\n*This repository documents personal academic projects and serves as a portfolio record.*\n"
